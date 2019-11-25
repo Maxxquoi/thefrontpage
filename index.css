@@ -1,0 +1,206 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.main-structure{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 400px 600px repeat(3,1fr);
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 67% 5% 6% 4% 10% 6%;
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 100%; */
+}
+
+li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.team-name a {
+  color: red;
+}
+
+.hero-banner {
+  background-image: url('./images/mountain-ranges-2819353.jpg');
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 37px 0px 37px;
+}
+
+.hero-banner-message {
+  margin: 15% 10% 5% 10%;
+}
+
+.msg-1, .msg-5 {
+  font-size: 20px;
+}
+
+.msg-2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.msg-3 {
+  margin: 0px 0px 40px 0px;
+}
+
+.msg-4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.dow-index-rank {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.dow-index-msg {
+  text-align: center;
+  margin: 60px 0px 30px 0px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.rank-circle {
+  border: solid;
+  border-radius: 75px;
+  height: 150px;
+  width: 150px;
+  background-color: darkcyan;
+  text-align: center;
+}
+
+.rank-circle-msg {
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0px 100px 0px 100px;
+  background-color: white;
+  /* border: solid; */
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+}
+
+.info-card-left {
+  /* flex: 0 0 50%; */
+  width: 50%;
+  height: 450px;
+}
+
+.info-card-left {
+  background-image: url('images/team-4589798_1920.jpg');
+  background-size: contain;
+}
+
+.info-card-right {
+  /* flex: 1; */
+  width: 50%;
+  text-align: center;
+  margin: 0px 10% 0px 10%;
+}
+
+.card-hr {
+  margin: 3% 47% 3% 47%;
+  color: red;
+}
+
+.card-title {
+  margin-top: 5%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  margin-bottom: 7%;
+}
+
+.card-description {
+  margin: 0 10% 0 10%;
+  text-align: left;
+  padding: 10px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+}
+
+.card-learn-more {
+  margin-top: 25px;
+  margin-right: 410px;
+}
+
+.card-learn-more > a {
+  text-decoration: none;
+  color: deepskyblue;
+}
+
+.recent-blog-posts {
+  margin: 0 80px 0 80px;
+}
+
+.blog-card-title-and-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 5px 50px 5px;
+  /* margin-bottom: 50px; */
+}
+
+.blog-card-title {
+  flex: 1 0 65%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.blog-card-buttons > button {
+  border: 0;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.blog-post-card {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.post {
+  flex: 1 0 15%;
+  margin: 0 10px 0 10px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+}
+
+.blog-image {
+  background-image: url('images/team-4589798_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+  background-repeat: no-repeat;
+}
+
+.blog-title, .blog-description, .blog-creation-time {
+  margin: 20px 20px 0 20px;
+}
+
+.blog-description {
+  line-height: 30px;
+}
+
+.time {
+  margin: 0 5px 0 10px;
+}
